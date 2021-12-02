@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML 레이아웃</title>
+
+<style>
+h1{ text-align:right;
+	background-color:pink; 
+	color:white; 
+	weight:bold;
+	font-size:200%;
+	}
+	
+	
+body{	font-family:"맑은 고딕", "고딕", "굴림";}
+#wrapper{width:800px;
+		 border-style: ridge;
+		 border-color:yellow;
+		 }
+
+header {
+		width: 100%; 
+		height: 500px;
+		
+		}
+		
+header nav {
+		width:70%;
+		margin-top:50px;
+		}
+
+header ul{
+		list-style-type: none; 
+		width: 100%;
+		height: 100%;
+		justify-content: space-between;
+		}
+
+header ul>li {
+		font-size: 20px;
+		height: 100%;
+		display: flesx;
+		justify-content: space-between;		
+		}
+
+/* article 박스 4개 */
+section {
+		width: 580px;
+}
+
+section.article{
+		width: 250px;
+		height: 220px;
+		border-style: ridge;
+}
+article.h3 {
+}
+
+.dogs{margin:0;
+	  padding: 5px;
+	  }
+
+
+
+</style>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+<h1>입양하기</h1>
+
+
+
+<div class="mainNav">
+<nav>
+<ul>
+<li class="nav01">애완견 종류</li>
+<li class="nav02">입양하기</li>
+<li class="nav03">건강돌보기</li>
+<li class="nav04">더불어살기</li>
+</ul>
+</nav>
+</div>
+
+</header>
+
+<section>
+<article class="dogs">
+<h2>강아지 용품 준비하기</h2>
+
+<article class="dog1">
+<h3>강아지 집</h3>
+<p>강아지가 편히 쉴 수 있는..</p>
+</article>
+
+<article class="dog2">
+<h3>강아지 먹이</h3>
+<p>강아지의 먹이는 꼭....</p>
+</article>
+
+<article class="dog3">
+<h3>밥그릇, 물병</h3>
+<p>밥그릇은 쉽게 넘어지지 않도록...</p>
+</article>
+
+<article class="dog4">
+<h3>이름표, 목줄</h3>
+<p>강아지를 잃어버릴 염려가 ... </p>
+</article>
+</section>
+
+</div>
+</body>
+</html>

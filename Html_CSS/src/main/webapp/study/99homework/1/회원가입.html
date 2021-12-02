@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 페이지 구현</title>
+
+
+<style>
+h1 { text-align:center;
+}
+ul{list-style-type: none;}
+
+#wrapper{
+                margin: 0px auto;
+                width: 800px;
+                border: 1px solid black;
+}
+form.legend {
+	text-align:center;
+
+}
+
+.button {
+	width:80px;
+	height: 25px;
+	border: 0;
+	background-color:navy;
+	border-radius: 5px;
+	color: white;
+}
+
+form label.tit{
+	font-size: 14px;
+	width : 100%;
+	float: left;
+}
+
+</style>
+
+</head>
+
+
+<body>
+	<div>
+		<form action="#" method="post" >
+		<h1>MEMBER INFO</h1><hr>
+		<fieldset>
+			<ul><li>
+			<legend for="comment"class="tit">*표시는 필수 입력 표시입니다.</legend><br><hr> 
+			<label for="fname"class="tit">*ID</label>
+			<input type="text" id="fname" required="required" maxlength="14"></li></ul>
+			
+			<ul><li>
+			<label for="lname"class="tit">*이름</label> 
+			<input type="tel" id="tel1" required="required"></li></ul>
+		
+			<ul><li>
+			<label for="passwd"class="tit">*비밀번호</label> 
+			<input type="text" size=40" id="addr" required="required" maxlength="15"></li></ul>
+
+			<ul><li>
+			<label for="passwd2"class="tit">*비밀번호확인</label> 
+			<input type="text" size=40" id="addr" required="required" maxlength="15"></li></ul>
+			
+		
+			<ul><li>
+			<label for="bday"class="tit">*생일</label> 
+			 <div>
+                   <span>
+                   <input type="text" id="year" maxlength="4" placeholder="년">
+                   <input type="text" id="month" maxlength="2" placeholder="월">
+                   <input type="text" id="day" maxlength="2" placeholder="일">
+                   </span>
+                   </div>
+                   </li></ul>
+                   
+		
+			<ul><li>
+			<label for="bday"class="tit">*이메일</label> 
+			<input type='text' name="email">@
+            <input type='text' name="email_dns" placeholder="직접입력">
+                <input type ="button" value="중복확인" class="button">
+               </li></ul>
+			
+			<ul><li>
+			<label for="tel"class="tit">*휴대폰</label> 
+			<input type='number' name="tel">-<input type='number' name="tel">-<input type='number' name="tel">
+			</li></ul>
+			
+			<ul><li>
+			<label for="addr"class="tit">*주소</label> 
+			<textarea rows="2" cols="40" id="addr"></textarea></li></ul>
+
+			<ul><li>
+			<label for="addr2"class="tit">*상세주소</label> 
+			<textarea rows="2" cols="40" id="addr2"></textarea></li></ul>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 페이지 구현</title>
+
+
+<style>
+h1 { text-align:center;
+}
+ul{list-style-type: none;}
+
+#wrapper{
+                margin: 0px auto;
+                width: 800px;
+                border: 1px solid black;
+}
+
+form.button {
+	width:80px;
+	height: 42px;
+	border: 0;
+	background-color: navy;
+	border-radius: 5px;
+	color: white;
+}
+
+form label.tit{
+	font-size: 14px;
+	width : 120px;
+	float: left;
+}
+
+</style>
+
+</head>
+
+
+<body>
+	<div>
+		<form action="#" method="post" >
+		<h1>MEMBER INFO</h1><hr>
+		<fieldset>
+			<ul><li>
+			<label for="comment"class="tit">*표시는 필수 입력 표시입니다.</label><br><hr> 
+			<label for="fname"class="tit">*ID</label>
+			<input type="text" id="fname" required="required" maxlength="14"></li></ul>
+			
+			<ul><li>
+			<label for="lname"class="tit">*이름</label> 
+			<input type="tel" id="tel1" required="required"></li></ul>
+		
+			<ul><li>
+			<label for="passwd"class="tit">*비밀번호</label> 
+			<input type="text" size=40" id="addr" required="required" maxlength="15"></li></ul>
+
+			<ul><li>
+			<label for="passwd2"class="tit">*비밀번호확인</label> 
+			<input type="text" size=40" id="addr" required="required" maxlength="15"></li></ul>
+			
+			<ul><li>
+			<label for="bday"class="tit">*생일</label> 
+			<p><input type="text" name="year" size="1" maxlength="4">년</p>
+			<p><input type="text" name="month" size="1" maxlength="2">월</p>
+			<p><input type="text" name="day" size="1" maxlength="2">일</p></li></ul>
+			
+			<ul><li>
+			<label for="bday"class="tit">*이메일</label> 
+			<input type='text' name="email">@
+            <input type='text' name="email_dns" placeholder="직접입력">
+              <select name="emailaddr"></li></ul>
+                <input type ="button" value="중복확인" class="button">
+               </select>
+			
+			<ul><li>
+			<label for="tel"class="tit">*휴대폰</label> 
+			<textarea rows="3" cols="40" id="tel"></textarea></li></ul>
+
+			<ul><li>
+			<label for="addr"class="tit">*주소</label> 
+			<textarea rows="3" cols="40" id="addr"></textarea></li></ul>
+
+			<ul><li>
+			<label for="addr2"class="tit">*상세주소</label> 
+			<textarea rows="3" cols="40" id="addr2"></textarea></li></ul>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
+
+
